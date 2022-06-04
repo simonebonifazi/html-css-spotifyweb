@@ -1,10 +1,38 @@
 /* approccio mobile-first */
 
+/* xs layout */
+
+@media screen and (max-width:576px) {
+
+    .top-aside ul li {
+        display: none;
+    }
+}
+
 /* mobile */
 @media screen and (min-width: 577px) {
     #main-content aside {
         width: 200px;
     }
+
+    .top-aside .logo {
+        min-height: 2.6rem;
+    }
+
+    /* .top-aside ul {
+        overflow: auto;
+
+} */
+
+    .top-aside ul li {
+        display: flex;
+
+
+        min-height: 1rem;
+        border: 2px dotted black;
+    }
+
+
 }
 
 /* tablet */
