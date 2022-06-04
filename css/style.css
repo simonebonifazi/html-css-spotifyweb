@@ -24,18 +24,8 @@ body {
 
 /* layout-blocchettoni */
 
-main {
+#main-container {
     height: calc(100vh - 100px);
-}
-
-aside {
-    width: 200px;
-    background-color: rgb(48, 197, 60);
-    height: 100%;
-
-    flex-direction: column;
-    justify-content: space-between;
-
 }
 
 header {
@@ -56,13 +46,25 @@ header {
     overflow: auto;
 }
 
+aside {
+    width: 50px;
+    background-color: rgb(48, 197, 60);
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
 .content {
     padding-top: 100px;
 }
 
 
 #main-footer {
-    width: 100vw;
+    width: 100%;
     background-color: rgb(231, 31, 31);
     height: 100px;
     position: fixed;
