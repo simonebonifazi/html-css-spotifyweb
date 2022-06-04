@@ -1,7 +1,11 @@
 /* approccio mobile-first */
 
 /* tablet */
-@media screen and (min-width:768px) {}
+@media screen and (max-width:768px) {
+    .side-menu {
+        width: 12rem;
+    }
+}
 
 /* desktop */
 @media screen and (min-width:992px) {}
