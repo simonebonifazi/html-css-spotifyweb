@@ -153,11 +153,13 @@ footer {
     padding: 0.4rem;
     color: #fff;
 
+    font-size: x-small;
+
 }
 
 .currently-played img {
     width: 45px;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
 }
 
 footer p,
@@ -169,11 +171,14 @@ footer .shortcut {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 1.2rem;
+    margin-left: 0.85rem;
 }
+
+
 
 footer .player ul {
     align-items: center;
+    justify-content: center;
 }
 
 footer .player li {
@@ -182,13 +187,13 @@ footer .player li {
 
 footer .bottom-player {
     align-items: center;
-    justify-content: space-evenly;
 }
 
 footer .time-bar {
     height: 5px;
     background-color: #5A5A5A;
 
+    width: 25vw;
     flex-grow: 1;
     border-radius: 0.25rem;
 
@@ -204,7 +209,6 @@ footer .effective-time-passed-bar {
 
 footer .audio-set-up {
     align-items: center;
-    align-content: stretch;
 
 }
 
@@ -214,11 +218,10 @@ footer .setting-player li {
 
 footer .volume-bar {
     height: 5px;
-    width: 55px;
+    width: 3.25rem;
     margin-left: 0.5rem;
     background-color: #5A5A5A;
     border-radius: 0.25rem;
-    flex-grow: 1;
 }
 
 footer .set-volume-bar {
