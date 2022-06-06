@@ -6,6 +6,17 @@
     box-sizing: border-box;
 }
 
+ul li {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
 /*  generics */
 
 body {
@@ -117,6 +128,13 @@ aside {
     color: #fff;
 }
 
+.bottom-aside .user img {
+    background-color: #989898;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
 .content {
     flex-grow: 1;
     overflow-y: auto;
@@ -129,4 +147,35 @@ footer {
     flex-basis: 100px;
     flex-shrink: 0;
 
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.4rem;
+    color: #fff;
+
+}
+
+.currently-played img {
+    width: 45px;
+    padding: 0.5rem 0;
+}
+
+footer p,
+footer .shortcut {
+    color: #7E7E7E;
+}
+
+footer .shortcut {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.2rem;
+}
+
+footer .player ul {
+    align-items: center;
+}
+
+footer .player li {
+    margin: 0.5rem 1.2rem;
 }

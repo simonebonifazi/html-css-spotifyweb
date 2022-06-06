@@ -15,33 +15,31 @@
         width: 200px;
     }
 
+    .top-aside {
+        overflow-y: auto;
+
+    }
+
     .top-aside .logo {
         display: none;
     }
 
     .top-aside .big-logo {
         display: inline-block;
-        opacity: 1;
-        width: 80px;
     }
 
     .top-aside .big-logo img {
 
-        width: 80px;
-        height: 40px;
+        width: 155px;
+        height: 60px;
+        opacity: 1;
     }
 
-    /* .top-aside ul {
-        overflow: auto;
-
-} */
     .top-aside .playlist-section {
         display: inline-block;
+
     }
 
-    .top-aside ul li {
-        display: flex;
-    }
 
 }
 
