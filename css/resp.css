@@ -10,30 +10,43 @@
 }
 
 /* mobile */
-@media screen and (min-width: 577px) {
+@media screen and (min-width: 576px) {
     #main-content aside {
         width: 200px;
     }
 
     .top-aside .logo {
-        min-height: 2.6rem;
+        display: none;
+    }
+
+    .top-aside .big-logo {
+        display: inline-block;
+        opacity: 1;
+        width: 80px;
+    }
+
+    .top-aside .big-logo img {
+
+        width: 80px;
+        height: 40px;
     }
 
     /* .top-aside ul {
         overflow: auto;
 
 } */
+    .top-aside .playlist-section {
+        display: inline-block;
+    }
 
     .top-aside ul li {
         display: flex;
-
-
-        min-height: 1rem;
-        border: 2px dotted black;
     }
 
-
 }
+
+
+
 
 /* tablet */
 @media screen and (max-width:768px) {}

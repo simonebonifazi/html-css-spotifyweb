@@ -29,15 +29,24 @@ body {
 
 /* layout-blocchettoni */
 
-#main-container {
-    height: calc(100vh - 100px);
+.wrapper {
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    overflow: auto;
+
 }
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
+
+
     height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
 
@@ -59,31 +68,65 @@ header .btnh {
 #main-content {
     height: 100%;
 
-    overflow: auto;
 }
 
+/* aside */
 aside {
-    width: 50px;
-    background-color: rgb(48, 197, 60);
-    height: 100%;
+    flex-basis: 50px;
+    flex-shrink: 0;
+
+    padding: 0.4rem;
+    background-color: #000;
+    color: #D2D2D2;
 
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.big-logo {
+    display: none;
+}
+
+.top-aside img {
+    width: 25px;
+    opacity: 0.5;
+}
+
+.top-aside .logo img {
+    opacity: 1;
+}
+
+
+
+.playlist-section {
+    display: none;
+    padding-top: 0.8rem;
+    max-height: 100%;
+}
+
+.playlist-section li {
+    padding: 0.5rem 0;
 
 }
 
 
+.playlist-section h3 {
+    color: #fff;
+}
 
 .content {
-    padding-top: 100px;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 
-#main-footer {
-    width: 100%;
-    background-color: rgb(231, 31, 31);
-    height: 100px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+footer {
+
+    background-color: #282828;
+    flex-basis: 100px;
+    flex-shrink: 0;
+
 }
