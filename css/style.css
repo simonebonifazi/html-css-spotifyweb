@@ -37,15 +37,6 @@ h4 {
 
 
 
-/*  DA RIMUOVERE, A SOLI FINI GRAFICI */
-.debug div {
-    border: 1.5px dotted black;
-    min-width: 1.23rem;
-    min-height: 1.23rem;
-}
-
-
-
 
 /* utils */
 .d-flex {
@@ -62,30 +53,6 @@ h4 {
 
 /* header */
 
-header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-
-
-    height: 75px;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    text-align: right;
-    line-height: 75px;
-
-    padding: 0 1.1rem;
-}
-
-header .btnh {
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 1.5rem;
-    border: 1px solid #fff;
-    padding: 0.75rem;
-
-}
 
 #main-content {
     height: 100%;
@@ -127,26 +94,42 @@ aside {
 
 .top-aside .home a,
 .top-aside .search a,
-.top-aside .library a,
-.new-playlist {
+.top-aside .library a {
     align-items: center;
     color: #989898;
+    padding-top: 00.25rem;
 }
 
+.download-app {
+    opacity: 0.6;
+}
+
+.download-app:hover {
+    opacity: 1;
+}
+
+.active-left {
+    border-left: 2px solid #adff2f;
+}
+
+.new-playlist {
+    align-items: center;
+}
 
 
 
 .playlist-section {
     display: none;
     padding-top: 0.8rem;
-    max-height: 100%;
+    max-height: 90%;
 }
 
-.playlist-section li {
-    padding: 0.5rem 0;
+.playlist-section a {
     color: #989898;
-}
+    padding: 0.25rem;
+    display: block;
 
+}
 
 .playlist-section h3 {
     padding: 0.5rem 0;
@@ -156,12 +139,28 @@ aside {
     overflow-y: auto;
 }
 
+.content .navbar .active::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 2px;
+    background-color: #adff2f;
+}
+
+.top-aside a:hover,
+.bottom-aside a:hover,
+.content .navbar a:hover {
+    color: #fff;
+}
+
 
 
 /* bottom aside */
 
 .bottom-aside {
-    width: 100%;
+    width: 90%;
+    flex-direction: column;
 }
 
 .bottom-aside .download-app,
@@ -181,6 +180,7 @@ aside {
 
 .bottom-aside .download-app {
     text-align: center;
+    color: #989898;
 }
 
 .bottom-aside .download-app img {
@@ -197,6 +197,35 @@ aside {
 }
 
 /* content */
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+
+
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    text-align: right;
+    line-height: 75px;
+
+    padding: 0 1.1rem;
+}
+
+header .btnh {
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 1.5rem;
+    border: 1px solid #fff;
+    padding: 0.75rem;
+
+}
+
+header .btnh:hover {
+    transform: scale(1.2);
+}
 
 main {
     flex-grow: 1;
@@ -218,9 +247,10 @@ main {
     align-items: center;
 }
 
-.content .navbar li {
+.content .navbar li a {
     color: #7C7E83;
     padding: 0.5rem;
+    display: inline-block;
 }
 
 /* recently played */

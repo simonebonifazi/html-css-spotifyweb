@@ -21,15 +21,19 @@
     <title>Spotify Web</title>
 </head>
 
-<body class="debug">
+<body>
+    <!-- layout with flexbox -->
     <div class="wrapper d-flex">
         <main>
+            <!-- main container -->
             <div id="main-content" class="d-flex">
+                <!-- aside -->
                 <aside class="d-flex">
                     <div class="top-aside">
                         <div class="big-logo"> <a href="#"> <img src="./imgs/logo.svg" alt="logo grande"></a></div>
                         <div class="logo"> <a href="#"><img src="./imgs/logo-small.svg" alt="logo Spotify"></a></div>
-                        <div class="home"> <a href="#" class="d-flex"> <img src="./imgs/home.svg" alt="home icon">
+                        <div class="home active-left"> <a href="#" class="d-flex"> <img src="./imgs/home.svg"
+                                    alt="home icon">
                                 <span> Home</span>
                             </a>
                         </div>
@@ -42,19 +46,21 @@
                                 <span> La tua libreria</span> </a></div>
                         <div class="playlist-section">
                             <h3> Playlist</h3>
-                            <div class="new-playlist d-flex"> <i class="fa-regular fa-square-plus fa-2x"></i> Crea
-                                Playlist
+                            <div>
+                                <a class="new-playlist d-flex" href="#"><i class="fa-regular fa-square-plus fa-2x"></i>
+                                    Crea
+                                    Playlist </a>
                             </div>
                             <div class="name-playlist">
                                 <ul>
-                                    <li> Nome Playlist </li>
-                                    <li> Nome Playlist </li>
-                                    <li> Nome Playlist </li>
-                                    <li> Nome Playlist </li>
-                                    <li> Nome Playlist </li>
-                                    <li> Nome Playlist </li>
-                                    <li> Nome Playlist </li>
-                                    <li> Nome Playlist </li>
+                                    <li> <a href="#"> Nome Playlist</a> </li>
+                                    <li> <a href="#"> Nome Playlist</a> </li>
+                                    <li> <a href="#"> Nome Playlist</a> </li>
+                                    <li> <a href="#"> Nome Playlist</a> </li>
+                                    <li> <a href="#"> Nome Playlist</a> </li>
+                                    <li> <a href="#"> Nome Playlist</a> </li>
+                                    <li> <a href="#"> Nome Playlist</a> </li>
+                                    <li> <a href="#"> Nome Playlist</a> </li>
 
                                 </ul>
                             </div>
@@ -62,9 +68,10 @@
                     </div>
 
 
-                    <div class="bottom-aside">
-                        <div class="download-app d-flex"> <img src="./imgs/download.svg" alt="download"> <span> Installa
-                                app</span> </div>
+                    <div class="bottom-aside d-flex">
+                        <div> <a class="download-app d-flex" href="#"><img src="./imgs/download.svg" alt="download">
+                                <span> Installa
+                                    app</span> </a> </div>
                         <hr>
                         <div class="user d-flex"> <img src="./imgs/profile.svg" alt="user image"> <span> Jonh Doe
                             </span>
@@ -72,6 +79,7 @@
                     </div>
                 </aside>
 
+                <!-- content -->
 
                 <div class="content">
                     <header>
@@ -79,12 +87,12 @@
                     </header>
                     <nav class="navbar ">
                         <ul class=" d-flex">
-                            <li> IN EVIDENZA</li>
-                            <li> PODCAST</li>
-                            <li> CLASSIFICHE</li>
-                            <li> GENERI E MOOD</li>
-                            <li> NUOVE USCITE</li>
-                            <li> SCOPRI</li>
+                            <li class="active"> <a href="#"> IN EVIDENZA</a></li>
+                            <li> <a href="#"> PODCAST</a></li>
+                            <li> <a href="#"> CLASSIFICHE</a></li>
+                            <li> <a href="#"> GENERI E MOOD</a></li>
+                            <li> <a href="#"> NUOVE USCITE</a></li>
+                            <li> <a href="#"> SCOPRI</a></li>
                         </ul>
                     </nav>
 
