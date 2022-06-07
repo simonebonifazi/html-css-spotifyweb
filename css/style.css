@@ -142,14 +142,6 @@ aside {
     display: inline-block;
 }
 
-.content .navbar .active::after {
-    content: '';
-    display: block;
-    margin: 0 auto;
-    width: 30%;
-    height: 2px;
-    background-color: #adff2f;
-}
 
 .top-aside a:hover,
 .bottom-aside a:hover,
@@ -232,6 +224,7 @@ header .btnh {
 
 }
 
+
 header a:hover .btnh {
     transform: scale(.8)
 }
@@ -254,6 +247,15 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.content .navbar .active::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 2px;
+    background-color: #adff2f;
 }
 
 .content .navbar li a {
@@ -330,6 +332,7 @@ footer .currently-played img {
     padding: 0.5rem 0.5rem;
 }
 
+
 footer p,
 footer .shortcut {
     color: #7E7E7E;
@@ -341,6 +344,35 @@ footer .shortcut {
     align-items: center;
     margin-left: 0.85rem;
 }
+
+footer .shortcut .favorites:hover,
+footer .shortcut .folder:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+footer p:hover {
+    text-decoration: underline;
+}
+
+/* dopo una svista;
+stavo cercando di far comparire fa solid al posto di fa regular, senza troppo successo 
+
+.shortcut .fav-solid,
+.shortcut .folder-solid {
+    display: none;
+}
+
+footer .shortcut .favorites:hover+.fav-solid,
+footer .shortcut .folder:hover+.folder-solid {
+    display: block;
+}
+
+.shortcut .fav-solid:hover+.folder,
+.shortcut .folder-solid:hover+.favorites {
+    display: none;
+} */
+
 
 
 /* footer central side */
