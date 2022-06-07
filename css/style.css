@@ -6,6 +6,17 @@
     box-sizing: border-box;
 }
 
+
+/*  generics */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
 ul li {
     list-style-type: none;
 
@@ -18,11 +29,13 @@ a {
 
 }
 
-/*  generics */
-
-body {
-    font-family: 'Montserrat', sans-serif;
+h2,
+h3,
+h4 {
+    color: #fff;
 }
+
+
 
 /*  DA RIMUOVERE, A SOLI FINI GRAFICI */
 .debug div {
@@ -46,13 +59,8 @@ body {
     height: 100vh;
 }
 
-/* content */
 
-main {
-    flex-grow: 1;
-    overflow: auto;
-
-}
+/* header */
 
 header {
     position: sticky;
@@ -141,7 +149,6 @@ aside {
 
 
 .playlist-section h3 {
-    color: #fff;
     padding: 0.5rem 0;
 }
 
@@ -189,9 +196,70 @@ aside {
     height: 30px;
 }
 
+/* content */
+
+main {
+    flex-grow: 1;
+    overflow: auto;
+
+}
+
 .content {
     flex-grow: 1;
     overflow-y: auto;
+    background-color: #141922;
+    font-size: small;
+}
+
+
+.content .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .navbar li {
+    color: #7C7E83;
+    padding: 0.5rem;
+}
+
+/* recently played */
+
+section h2 {
+    padding: 1rem 0.5rem;
+}
+
+#recently-played .row {
+    flex-wrap: wrap;
+}
+
+#recently-played .col,
+#created-for-you .col,
+#most-popular .col {
+    flex-basis: 50%;
+    padding: 00.5rem;
+    text-align: center;
+}
+
+#recently-played figure {
+    padding: 0.8rem 0;
+}
+
+#recently-played .col>div {
+    color: #77797E;
+    padding-top: 0.5rem;
+}
+
+/* created for you */
+
+.section-description {
+    color: #7C7E83;
+    padding: 0.8rem 0.5rem;
+}
+
+/* most popular artist */
+#most-popular img {
+    border-radius: 50%;
 }
 
 /* footer */
