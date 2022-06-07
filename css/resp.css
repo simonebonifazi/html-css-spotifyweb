@@ -68,8 +68,13 @@
 
     }
 
+    aside .bottom-aside {
+        align-items: unset;
+    }
+
     aside .bottom-aside .download-app {
         text-align: left;
+
 
     }
 
