@@ -198,6 +198,7 @@ aside {
 
 /* content */
 
+/* header */
 header {
     position: sticky;
     top: 0;
@@ -223,8 +224,8 @@ header .btnh {
 
 }
 
-header .btnh:hover {
-    transform: scale(1.2);
+header span:hover {
+    transform: scale(.8)
 }
 
 main {
@@ -362,6 +363,7 @@ footer .time-bar {
     border-radius: 0.25rem;
 
     margin: 0 0.5rem;
+    cursor: pointer;
 }
 
 footer .effective-time-passed-bar {
@@ -369,6 +371,29 @@ footer .effective-time-passed-bar {
     height: 100%;
     background-color: #C1C1C1;
     border-radius: 0.25rem;
+
+    position: relative;
+}
+
+footer .time-bar:hover .effective-time-passed-bar,
+footer .volume-bar:hover .set-volume-bar {
+    background-color: #aafa5f;
+}
+
+footer .time-bar:hover .bar-point {
+    display: block;
+}
+
+footer .bar-point {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: none;
 }
 
 footer .audio-set-up {
@@ -388,7 +413,10 @@ footer .volume-bar {
     margin-left: 0.5rem;
     background-color: #5A5A5A;
     border-radius: 0.25rem;
+    position: relative;
+    cursor: pointer;
 }
+
 
 footer .set-volume-bar {
     width: 42%;
@@ -396,4 +424,10 @@ footer .set-volume-bar {
     background-color: #C1C1C1;
     border-radius: 0.25rem;
 
+}
+
+footer .volume-bar:hover .bar-point {
+    display: block;
+    left: 42%;
+    transform: translate(0 -42%);
 }
