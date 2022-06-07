@@ -1,10 +1,31 @@
 /* approccio mobile-first */
 
+/* xxs layout */
+
+@media screen and (max-width:455px) {
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .setting-player,
+    footer .shortcut {
+        display: none;
+    }
+
+
+
+
+}
+
 /* xs layout */
 
 @media screen and (max-width:576px) {
 
-    .top-aside ul li {
+    .top-aside ul li,
+    .top-aside span,
+    .bottom-aside span,
+    .bottom-aside hr {
         display: none;
     }
 
@@ -44,6 +65,12 @@
         display: inline-block;
 
     }
+
+    aside .bottom-aside .download-app {
+        text-align: left;
+
+    }
+
 
 
     footer .caption p {

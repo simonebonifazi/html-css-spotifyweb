@@ -14,6 +14,7 @@ ul li {
 a {
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 
 }
 
@@ -38,12 +39,14 @@ body {
     display: flex;
 }
 
-/* layout-blocchettoni */
+/* layout con flex */
 
 .wrapper {
     flex-direction: column;
     height: 100vh;
 }
+
+/* content */
 
 main {
     flex-grow: 1;
@@ -58,13 +61,13 @@ header {
     right: 0;
 
 
-    height: 100px;
+    height: 75px;
     background-color: rgba(0, 0, 0, 0.5);
 
     text-align: right;
-    line-height: 100px;
+    line-height: 75px;
 
-    padding: 0 1.3rem;
+    padding: 0 1.1rem;
 }
 
 header .btnh {
@@ -94,8 +97,12 @@ aside {
     justify-content: space-between;
     align-items: center;
 
+    font-size: smaller;
+
 
 }
+
+/* top aside */
 
 .big-logo {
     display: none;
@@ -110,6 +117,15 @@ aside {
     opacity: 1;
 }
 
+.top-aside .home a,
+.top-aside .search a,
+.top-aside .library a,
+.new-playlist {
+    align-items: center;
+    color: #989898;
+}
+
+
 
 
 .playlist-section {
@@ -120,25 +136,65 @@ aside {
 
 .playlist-section li {
     padding: 0.5rem 0;
-
+    color: #989898;
 }
 
 
 .playlist-section h3 {
     color: #fff;
+    padding: 0.5rem 0;
 }
+
+.playlist-section .name-playlist {
+    overflow-y: auto;
+}
+
+
+
+/* bottom aside */
+
+.bottom-aside {
+    width: 100%;
+}
+
+.bottom-aside .download-app,
+.bottom-aside .user {
+    align-items: center;
+}
+
+.bottom-aside span {
+    padding-left: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+.bottom-aside .user span {
+    color: #fff;
+    font-weight: bold;
+}
+
+.bottom-aside .download-app {
+    text-align: center;
+}
+
+.bottom-aside .download-app img {
+    width: 18px;
+}
+
+
 
 .bottom-aside .user img {
     background-color: #989898;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .content {
     flex-grow: 1;
     overflow-y: auto;
 }
+
+/* footer */
 
 
 footer {
@@ -157,7 +213,12 @@ footer {
 
 }
 
-.currently-played img {
+/* footer left side */
+footer .image-container {
+    align-items: center;
+}
+
+footer .currently-played img {
     width: 45px;
     padding: 0.5rem 0.5rem;
 }
@@ -175,6 +236,7 @@ footer .shortcut {
 }
 
 
+/* footer central side */
 
 footer .player ul {
     align-items: center;
@@ -188,6 +250,10 @@ footer .player li {
 footer .bottom-player {
     align-items: center;
 }
+
+/*+++++++++++++++ REMINDER +++++++++++++++++
+CENTRALIZZARE TUTTI I -bar CON CARATTERISTICHE COMUNI, CERCARE TAG
+ */
 
 footer .time-bar {
     height: 5px;
@@ -212,13 +278,15 @@ footer .audio-set-up {
 
 }
 
+/* footer right side */
+
 footer .setting-player li {
     padding: 0 0.5rem;
 }
 
 footer .volume-bar {
     height: 5px;
-    width: 3.25rem;
+    width: 3.75rem;
     margin-left: 0.5rem;
     background-color: #5A5A5A;
     border-radius: 0.25rem;
